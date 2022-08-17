@@ -12,17 +12,22 @@ export const Movie = (props) => {
                 <div className={style.title}>{props.title}</div>
                 <div className={style.genres}>
                     {props.genres.map(g => {
-                        return <div className={style.genre}>{g}</div>
+                        return <div className={style.genre}
+                                    onClick={()=>{props.setFilterValue('genre',g)}}>{g}</div>
                     })}
                 </div>
                 <div>
-                    <div>Год: {props.year}</div>
-                    <div>Продолжительность (мин): {props.runtime}</div>
-                    <div>Режиссер: {props.director}</div>
-                    <div>В ролях: {props.actors}</div>
+                    <div>Year: {props.year}</div>
+                    <div>Runtime (min): {props.runtime}</div>
+                    <div>Director: {props.director}</div>
+                    <div>Actors: {props.actors}</div>
                 </div>
                 <div>
-                    {props.plot.slice(0,80)}
+                    {
+                        props.plot.length > 80
+                            ? `${props.plot.slice(0, 80)}...`
+                            : props.plot
+                    }
                 </div>
                 <div></div>
             </div>

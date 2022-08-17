@@ -1,0 +1,12 @@
+.select {
+    position: absolute;
+    background-color: white;
+    border: black 1px solid;
+    width: 120px;
+    padding-left: 5px;
+}
+.hidden {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+}

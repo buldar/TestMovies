@@ -1,0 +1,15 @@
+.pages {
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    border: blue solid 2px;
+}
+
+.selected {
+    font-size: 30px;
+    color: blue;
+}
+
+span {
+    margin-left: 10px;
+}
