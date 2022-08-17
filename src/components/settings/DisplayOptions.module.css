@@ -1,0 +1,17 @@
+.filters {
+    border: red solid 1px;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+}
+
+.select {
+    position: absolute;
+    background-color: white;
+    border: black 1px solid;
+    width: 100px;
+}
+.hidden {
+    width: 50px;
+}
+
